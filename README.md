@@ -6,9 +6,10 @@
 Historically, classical Time Series Modelling techniques e.g. ARIMA and GARCH were go-to machine learning tools employed by Quantitative Researchers to perform price predictions of financial instruments. Recently, their utility has been slowly diminishing due to their widespread use. The field is turning toward deep learning to improve market predictions and trading strategies. Overall, the past decade has seen many advancements in deep learning that fundamentally transformed all aspects of modern life. Neural networks also have shown a lot of potential in price predictions for stock trading. In this project, we attempt to model and predict prices of financial securities (including but not limited to stock indices and single stocks) with deep learning algorithms.
 
 ### Data Resources 
-●	We will be using panda io reader, which has the capability to pull data from various remote data sources including Yahoo Finance and Nasdaq. 
+We will be using panda io reader, which has the capability to pull data from various remote data sources including Yahoo Finance and Nasdaq. 
 ○	https://pandas-datareader.readthedocs.io/en/latest/
-●	 We also have access to Bloomberg Market Data. 
+
+We also have access to Bloomberg Market Data. 
 
 ### Higher Level Project Goals 
 ●	Use day closing and/or intraday prices of financial instruments to train various kinds of Neural Networks and use their intelligence for price prediction. 
