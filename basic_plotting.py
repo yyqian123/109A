@@ -30,6 +30,27 @@ def acf(amazon):
     plot_pacf(amazon['PX LAST'],ax=ax)
     return fig,axs
 
+def price_each_year(amazon):
+    fig,axs = plt.subplots(nrows=2,figsize=(10,10))
+    ax = axs[0]
+    plot_acf(amazon['PX LAST'],ax=ax)
+    ax = axs[1]
+    plot_pacf(amazon['PX LAST'],ax=ax)
+    return fig,axs
+
+
+def price_by_year(amazon):
+    fig,ax = plt.subplots()
+    amazon['Year'] = amazon.DATE.dt.year
+    for year,g in amazon.groupby('Year'):
+        ax.plot(g.DATE.dt.dayofyear,g['PX LAST'].values,label=year,alpha=0.7)
+    ax.legend(bbox_to_anchor=(1,1.03),loc="upper left")
+    ax.set_xlabel('Day of Year')
+    ax.set_ylabel('Price')
+    return fig,ax
+
+
 amazon = pd.read_csv('data/Google.csv',parse_dates=['DATE'])
+fig3,ax3=price_by_year(amazon)
 fig,ax = basic_plots(amazon)
 fig2,ax2 = acf(amazon)
