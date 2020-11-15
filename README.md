@@ -7,7 +7,7 @@ Historically, classical Time Series Modelling techniques e.g. ARIMA and GARCH we
 
 ### Data Resources 
 We will be using panda io reader, which has the capability to pull data from various remote data sources including Yahoo Finance and Nasdaq. 
-○	https://pandas-datareader.readthedocs.io/en/latest/
+	https://pandas-datareader.readthedocs.io/en/latest/
 
 We also have access to Bloomberg Market Data. 
 
@@ -15,7 +15,7 @@ We also have access to Bloomberg Market Data.
 Use day closing and/or intraday prices of financial instruments to train various kinds of Neural Networks and use their intelligence for price prediction. 
 
 Explore different neural net architectures including but are not limited to:
-Long Short-Term Memory Model (LSTM)
+Long Short-Term Memory Model (LSTM)/n
 Multilayer Perceptron (MLP), Artificial Neural Network (ANN)
 Probabilistic Neural Network (PNN)
 
